@@ -47,10 +47,12 @@ main {
 .text-preset-1 {
 	font-size: 24px;
 	font-weight: bold;
+	color: var(--white);
 }
 
 .text-preset-2 {
 	font-size: 14px;
+	color: var(--white);
 }
 
 .text-preset-2-bold {
