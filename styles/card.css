@@ -1,0 +1,56 @@
+.card {
+	background-color: var(--grey-800);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-300);
+	padding: var(--spacing-500);
+	border-radius: var(--spacing-150);
+	height: fit-content;
+	align-items: center;
+	text-align: center;
+	max-width: 384px;
+	width: 100%;
+}
+
+.profile-pic {
+	width: 88px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+}
+
+.name-location {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-50);
+}
+
+.card-list {
+	list-style: none;
+	gap: var(--spacing-200);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.card-list > li {
+	padding: var(--spacing-150);
+	background-color: var(--grey-700);
+	border-radius: var(--spacing-100);
+	transition: background-color 500ms ease;
+}
+
+.card-list > li:hover {
+	background-color: var(--green);
+	transition: background-color 500ms ease;
+	cursor: pointer;
+	& > a {
+		color: var(--grey-700);
+		cursor: pointer;
+		transition: color 500ms ease;
+	}
+}
+
+.card-list > li > a {
+	color: var(--white);
+	transition: color 500ms ease;
+}
